@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      background-color: rgb(215, 42, 201);
+    }
+  </style>
+  <script>
+    function abc(){
+   
+         firstname= document.getElementById('fn').value;
+         lastname= document.getElementById('ln').value;
+         fullname= firstname + lastname;
+         alert(fullname)
+    }
+  </script>
+</head>
+
+<body >
+    <div style="text-align: center;">
+    <h1> Login Page </h1>
+    <h3>
+      <form>
+        <div class="container">
+          <div class="form-inline">
+            <label for="text">Username :</label>
+          <input type="text" class="form-control"  placeholder="Enter User Name" name="Username">
+          </div>
+          <div class="form-inline">
+            <label for="pwd">Password  :</label>
+            <input type="Password" class="form-control"  placeholder="Enter Password" name="Password">
+          </div>
+          
+          <button type="submit" class="btn btn-success" onclick="abc()">Submit </button>
+          <button type="submit" class="btn btn-danger">REGISTER</button>
+        </div>
+      </form>
+    </h3>
+</div>
+</body>
+</html>
